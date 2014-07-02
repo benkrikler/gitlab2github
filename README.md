@@ -18,6 +18,7 @@ pip install -r requirements.txt
 First, enter your api keys on the config.py file.
 
 Gitlab token: http://git.strikingcode.com/profile/account
+
 Github token: https://github.com/settings/applications
 
 You can then import the copy_issues method from the gitlab_to_github module:
