@@ -21,7 +21,7 @@ Gitlab token: http://git.strikingcode.com/profile/account
 
 Github token: https://github.com/settings/applications
 
-You can then import the copy_issues method from the gitlab_to_github module:
+Then, import the copy_issues method from the gitlab_to_github module:
 
 ```python
 copy_issues(gitlab_repo=2, github_user='rbsdev', github_repo='test')
