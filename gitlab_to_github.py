@@ -165,7 +165,4 @@ def copy_issues(gitlab_project, github_user, github_repo):
 
 
 if __name__ == '__main__':
-    #repo = 'rbsdev'
-    #if 'url' in github_api.request( '/user/repos', 'POST', {'name': repo}):
-    #    print('Created repo {}'.format(repo))
-    print(copy_issues(2, 'rbsdev', 'sherlock'))
+    print(copy_issues(gitlab_repo=2, github_user='rbsdev', github_repo='test'))
