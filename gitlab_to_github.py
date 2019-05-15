@@ -164,5 +164,15 @@ def copy_issues(gitlab_project, github_user, github_repo):
     return issues_map
 
 
+def prepare_parser():
+    from argparse import ArgumentParser
+    parser = ArgumentParser()
+    parser.add_argument("--gitlab-project", required=True, type=int, help="Source repo ID")
+    parser.add_argument("--github-user", required=True, help="Username on github")
+    parser.add_argument("--github-repo", required=True, help="Repo on github to push to")
+    return parser
+
+
 if __name__ == '__main__':
-    print(copy_issues(gitlab_repo=2, github_user='rbsdev', github_repo='test'))
+    args = prepare_parser().parse_args()
+    print(copy_issues(**vars(args)))
