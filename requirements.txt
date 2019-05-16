@@ -1,1 +1,2 @@
-requests==2.2.1
+python-gitlab==1.8.0
+PyGithub==1.43.7
